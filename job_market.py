@@ -51,6 +51,7 @@ for d in descriptions:
     dupe_check[d]=True
 
 print 'Count of jobs:',len(deduped)
+print 'Criminal:',len([description for description in descriptions if 'riminal' in description])
 
 #output the results
 outfile=file('descriptions.txt', 'wb')
