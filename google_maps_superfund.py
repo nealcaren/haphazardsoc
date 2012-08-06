@@ -25,7 +25,7 @@ counter=1
 for site in sites:
         #no id, so I make one up with 'counter'
         filename='superfund'+str(counter)+'.png'
-        url='http://maps.googleapis.com/maps/api/staticmap?center=%s,%s&zoom=15&size=200x250&maptype=satellite&sensor=false&key=AIzaSyBqGbHrf6m8_6K671FLofG2sFV7sL4ECTc' % (site[0],site[1])
+        url='http://maps.googleapis.com/maps/api/staticmap?center=%s,%s&zoom=15&size=200x250&maptype=satellite&sensor=false' % (site[0],site[1])
 
         #This script runs if you don't have Image. It just downloads the image if you don't have it.
         if combine==False:
