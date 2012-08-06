@@ -1,7 +1,7 @@
 #Silly little file for scraping the ASA Job Bank
 #Neal Caren
 #neal.caren@unc.edu
-#August 2, 2012
+#August 6, 2012
 
 import urllib
 from time import sleep
