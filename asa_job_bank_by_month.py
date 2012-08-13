@@ -35,6 +35,7 @@ for jobid in range(8450,5,-1):
     text=file(filename,'rb').read()
     listing_active=re.findall('Listing Active<\/strong>:<br><\/td>\r\n<td class="bodycopy">(.*?) to ',text,re.DOTALL|re.MULTILINE)
     if len(listing_active)>0 and ('assistant professor' in text.lower() and 'tenure' in text.lower() ):
+        year=int(listing_active[0].split('/')[2])
         month=int(listing_active[0].split('/')[0])
         if year not in months:
             months[year]={}
