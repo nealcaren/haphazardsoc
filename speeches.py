@@ -36,7 +36,7 @@ def load_times(url):
 
 #Get both parties
 republican=analyze('http://graphics8.nytimes.com/packages/js/newsgraphics/2012/0823-convention-speeches/data.js')
-democratic=analyze('http://graphics8.nytimes.com/newsgraphics/2012/0904-convention-speeches/index.js')
+democratic=analyze('http://graphics8.nytimes.com/newsgraphics/2012/09/04/convention-speeches/0aaaea5489031beaef112440855ff471a40cacda/index.js')
 
 #Combine dictionaries to create sort order
 combo={item:republican[item]+democratic[item] for item in democratic}
